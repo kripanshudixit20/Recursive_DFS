@@ -1,7 +1,7 @@
 import java.util.HashMap;
 public class graphs
 {
-    private void deathFirstSearchRecursive(String node, HashMap<String, String[]> neighbors) {
+    private void depthFirstSearchRecursive(String node, HashMap<String, String[]> neighbors) {
         System.out.println(node);
         for (String n : neighbors.get(node))
         {
@@ -19,6 +19,6 @@ public class graphs
         graph.put("d", new String[]{"f"});
         graph.put("e", new String[]{});
         graph.put("f", new String[]{});
-        ob.deathFirstSearchRecursive("a", graph);
+        ob.depthFirstSearchRecursive("a", graph);
     }
 }
